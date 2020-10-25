@@ -17,7 +17,7 @@ def main():
     neural_network_model = tf.keras.Sequential([tf.keras.layers.Dense(units=1,input_shape=[1])])
     neural_network_model.compile(optimizer='adam',loss='mse')
     neural_network_model.fit(x,y,epochs=40000)
-    neural_network_model.save("linear.model")
+    neural_network_model.save("models/3x+3/linear.model")
 
 if __name__ == '__main__':
     main()
