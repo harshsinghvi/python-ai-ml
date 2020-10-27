@@ -3,12 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import sys
 
+MODEL_NAME="models/quadratic.model"
 
 # model1 = tf.keras.models.load_model("models/3x+3/mymodel1.h5")
-model_trained = tf.keras.models.load_model("models/3x+3/linear.model")
+model_trained = tf.keras.models.load_model(MODEL_NAME)
 # model_random=tf.keras.models.load_model("models/random.model")
 
-prediction = model_trained.predict([1,2,3,4,5,6,7,-1231])  # REMEMBER YOU'RE PASSING A LIST OF THINGS YOU WISH TO PREDICT
+prediction = model_trained.predict([1,2,3,4,5,6,7,1000])  # REMEMBER YOU'RE PASSING A LIST OF THINGS YOU WISH TO PREDICT
 print(prediction)
 
 
